@@ -1,5 +1,17 @@
  // including header files
 
+//sathish
+void add(int a ,int b)
+{
+    printf("%d",a+b);
+}
+void sub(int a, int b)
+{
+    printf("%d",a-b);
+}
+
+//shrikanth
+
 #include<stdio.h>          
 #include<stdlib.h>
 
@@ -11,3 +23,4 @@ int main(int argc,char ** argv)     // including command line arguments
             return 0;
         }
 }
+
