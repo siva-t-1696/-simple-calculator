@@ -1,7 +1,6 @@
 //Ramesh
 void mul(int a ,int b)
 {
-    printf("The two numbers are a=%d b=%d\n",a,b);
     print("multiplication of two numbers result is a*b=\n",a*b);
 }
 void div(int a,int b)
@@ -47,10 +46,12 @@ int main(int argc,char ** argv)     // including command line arguments
 
     switch(ch)
         {
-            case '+' : add(x,y);
-            case '-' : sub(x,y);
-            case '/' : div(x,y);
-            case '*' : mul(x,y);
+            case '+' : add(x,y); break;
+            case '-' : sub(x,y); break;
+            case '/' : div(x,y); break;
+            case '*' : mul(x,y); break;
+            default : printf("Invalid option\n");
+            return 0;
         }
 }
 
