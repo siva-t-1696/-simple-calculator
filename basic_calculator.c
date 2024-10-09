@@ -1,4 +1,4 @@
-
+//Ramesh
 void mul(int a ,int b)
 {
     printf("The two numbers are a=%d b=%d\n",a,b);
@@ -39,6 +39,18 @@ int main(int argc,char ** argv)     // including command line arguments
         {
             printf("./a.out num1  operator  num2\n");   // printing the error message 
             return 0;
+        }
+    int x = atoi(argv[1]);
+    int y = atoi(argv[3]);
+
+    char ch = argv[2][0];
+
+    switch(ch)
+        {
+            case '+' : add(x,y);
+            case '-' : sub(x,y);
+            case '/' : div(x,y);
+            case '*' : mul(x,y);
         }
 }
 
